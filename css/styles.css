@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+/* INDEX */
+.grillaIndex{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "header header header"
+    "titulo titulo titulo"    
+    "titulo2 titulo2 titulo2"
+    "calzado1 calzado2 calzado3"
+    "calzado4 calzado5 calzado6"
+    "calzado7 calzado8 calzado9"
+    "button button button"
+    "redes redes redes"
+    "footer footer footer";
+    gap: 20px;   
+
+}
+header{
+    background-color: white;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;    
+    z-index: 1;   
+}
+.menuHeader ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+.menuHeader ul li{
+    list-style: none;
+    margin: 0 20px;    
+}
+.menuHeader ul li a{
+    text-decoration: none;
+    color:blueviolet;
+    padding: 10px;
+    font-size: 20px;
+}
+.menuHeader ul li a:hover{
+    background-color: blueviolet;
+    color: white;
+    transition: 0.4s;
+}
+.logo{
+    width: 15%;
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+.logo a{
+    text-decoration: none;
+}
+.h2-titulo{
+    grid-area: titulo;
+    background-image: url(../img/Propaganda2.jpeg);
+    background-repeat: no-repeat cover;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+.h2-titulo h2{
+    color: rgb(248, 248, 248);
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+}
+.h2-titulo p{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: sans-serif ;
+}
+.h1-titulo{
+    grid-area: titulo2;
+    color:rgb(105, 32, 173);
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+}
+.estiloCalzado{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.estiloCalzado img{
+    width: 50%;
+}
+.calzado1{
+    grid-area: calzado1;
+}
+.calzado2{
+    grid-area: calzado2;
+}
+.calzado3{
+    grid-area: calzado3;
+}
+.calzado4{
+    grid-area: calzado4;
+}
+.calzado5{
+    grid-area: calzado5;
+}
+.calzado6{
+    grid-area: calzado6;
+}
+.calzado7{
+    grid-area: calzado7;
+}
+.calzado8{
+    grid-area: calzado8;
+}
+.calzado9{
+    grid-area: calzado9;
+}
+.index-button{
+ grid-area: button;
+ position: relative;
+ display: inline-block;
+ margin: 15px;
+ padding: 15px 30px;
+ text-align: center;
+ font-size: 18px;
+ letter-spacing: 1px;
+ text-decoration: none;
+ color: #725AC1;
+ background: transparent;
+ cursor: pointer;
+ transition: ease-out 0.5s;
+ border-radius: 30px;
+ border: 2px solid #725AC1;
+ border-radius: 10px;
+ box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+.index-button:hover {
+ color: white;
+ box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+.index-button:active {
+ transform: scale(0.9);
+}
+.redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: bold 700;
+}
+
+/* PRODUCTOS */
+
+.grillaProductos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+    "header header header header"
+    "titulo titulo titulo titulo" 
+    "calzado1 calzado2 calzado3 calzado4"
+    "calzado5 calzado6 calzado7 calzado8"
+    "calzado9 calzado10 calzado11 calzado12"
+    "calzado13 calzado14 calzado15 calzado16"
+    "calzado17 calzado18 calzado19 calzado20"
+    "pago pago pago pago"
+    "redes redes redes redes"
+    "footer footer footer footer";
+    gap: 2px;   
+
+}
+.h1-tituloProd{
+    grid-area: titulo;
+    color:rgb(105, 32, 173);
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+}
+.estiloCalzadoProd{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.estiloCalzadoProd img{
+    width: 50%;
+}
+.Calzado1{
+    grid-area: calzado1;
+}
+.Calzado2{
+    grid-area: calzado2;
+}
+.Calzado3{
+    grid-area: calzado3;
+}
+.Calzado4{
+    grid-area: calzado4;
+}
+.Calzado5{
+    grid-area: calzado5;
+}
+.Calzado6{
+    grid-area: calzado6;
+}
+.Calzado7{
+    grid-area: calzado7;
+}
+.Calzado8{
+    grid-area: calzado8;
+}
+.Calzado9{
+    grid-area: calzado9;
+}
+.Calzado10{
+    grid-area: calzado10;
+}
+.Calzado11{
+    grid-area: calzado11;
+}
+.Calzado12{
+    grid-area: calzado12;
+}
+.Calzado13{
+    grid-area: calzado13;
+}
+.Calzado14{
+    grid-area: calzado14;
+}
+.Calzado15{
+    grid-area: calzado15;
+}
+.Calzado16{
+    grid-area: calzado16;
+}
+.Calzado17{
+    grid-area: calzado17;
+}
+.Calzado1{
+    grid-area: calzado18;
+}
+.Calzado19{
+    grid-area: calzado19;
+}
+.Calzado20{
+    grid-area: calzado20;
+}
+.mediosDepago{
+    grid-area: pago;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nosotros */
+
+.grillaNosotros{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "header header"
+    "titulo titulo"
+    "parrafo imagen"
+    "pago pago"
+    "redes redes"
+    "footer footer";
+     gap: 5px;
+
+}
+.h1-nosotros{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+}
+.h1-nosotros p{
+    font-size: bold;
+
+}
+.p-nosotros{
+    grid-area: parrafo;
+}
+.p-nosotros p{
+    width: 60%;
+}
+.img-nosotros{
+    grid-area: imagen;
+}
+.img-nosotros img{
+    width: 60%;
+}
+
+
+
+/* SUCURSALES */
+
+.grillaNosotros{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "header header"
+    "titulo titulo"
+    "mapa direciones"
+    "redes redes"
+    "footer footer";
+     gap: 5px;
+
+}
+.suc-dire{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.h1-sucursales{
+    grid-area: titulo;
+    text-align: center;
+    margin: 15px;
+}
+.h1-sucursales h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 20px;
+    font-size: 40px;
+}
+.mapa{
+    grid-area: mapa;
+}
+.direciones{
+    grid-area: direcciones;
+}
+
+
+
+/* MEDIA QUerys */
+
+@media screen and (max-width:768px){
+    
+    .grillaIndex{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
+        "header header"
+        "titulo titulo"    
+        "titulo2 titulo2"
+        "calzado1 calzado2"
+        "calzado3 calzado4"
+        "calzado5 calzado6"
+        "calzado7 calzado8"
+        "calzado9 calzado9"
+        "button button"
+        "redes redes"
+        "footer footer";
+        gap: 20px;       
+    }
+    .menuHeader ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+    .menuHeader ul li a{
+        text-decoration: none;
+        color:blueviolet;
+        padding: 2px;
+        font-size: 15px;
+        line-height: 5px;
+    }
+}
+@media screen and (max-width:600px){
+    
+    .grillaIndex{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas:
+        "header"
+        "titulo"    
+        "titulo2"
+        "calzado1"
+        "calzado2"
+        "calzado3"
+        "calzado4"
+        "calzado5"
+        "calzado6"
+        "calzado7"
+        "calzado8"
+        "calzado9"
+        "button"
+        "redes"
+        "footer";
+        gap: 20px;       
+    }
+    .menuHeader ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+    .menuHeader ul li a{
+        text-decoration: none;
+        color:blueviolet;
+        padding: 2px;
+        font-size: 15px;
+        line-height: 5px;
+    }
+}
+@media screen and (max-width:1024px){
+    
+    .grillaProductos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas:
+        "header header header"
+        "titulo titulo titulo"    
+        "calzado1 calzado2 calzado3"
+        "calzado4 calzado5 calzado6"
+        "calzado7 calzado8 calzado9"
+        "calzado10 calzado11 calzado12"
+        "calzado13 calzado14 calzado15"
+        " calzado16 calzado17 calzado18"
+        "calzado19 calzado20 calzado20"
+        "pago pago pago"
+        "redes redes redes"
+        "footer footer footer";
+        gap: 2px;   
+    }
+}
+    @media screen and (max-width:768px){
+    .grillaProductos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
+        "header header"
+        "titulo titulo"    
+        "calzado1 calzado2"
+        "calzado3 calzado4"
+        "calzado5 calzado6"
+        "calzado7 calzado8"
+        "calzado9 calzado10"
+        "calzado11 calzado12"
+        "calzado13 calzado14"
+        "calzado15 calzado16"
+        "calzado17 calzado18"
+        "calzado19 calzado20"
+        "pago pago pago"
+        "redes redes"
+        "footer footer";
+        gap: 2px;   
+    }
+    .menuHeader ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+    .menuHeader ul li a{
+        text-decoration: none;
+        color:blueviolet;
+        padding: 2px;
+        font-size: 15px;
+        line-height: 5px;
+    }
+}
+@media screen and (max-width:768px){
+    .grillaProductos{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas:
+        "header"
+        "titulo"    
+        "calzado1"
+        "calzado2"
+        "calzado3"
+        "calzado4"
+        "calzado5"
+        "calzado6"
+        "calzado7"
+        "calzado8"
+        "calzado9" 
+        "calzado10"
+        "calzado11" 
+        "calzado12"
+        "calzado13" 
+        "calzado14"
+        "calzado15" 
+        "calzado16"
+        "calzado17" 
+        "calzado18"
+        "calzado19" 
+        "calzado20"
+        "pago"
+        "redes"
+        "footer";
+        gap: 2px;   
+    }
+    .menuHeader ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+    .menuHeader ul li a{
+        text-decoration: none;
+        color:blueviolet;
+        padding: 2px;
+        font-size: 15px;
+        line-height: 5px;
+    }
+}
+
